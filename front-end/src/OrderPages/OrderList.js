@@ -11,8 +11,6 @@ export default function OrderList() {
         let user=localStorage.getItem('token')
         if(!user){
         history("/")}
-    
-      
     }, );
 
 
@@ -21,7 +19,8 @@ export default function OrderList() {
    
     useEffect(() => {
         
-    fetch("http://localhost:5000/order/orderlist", {
+    // fetch("http://localhost:5000/order/orderlist", {
+fetch("https://laundry-app-service.herokuapp.com/orderlist", {
   method: 'GET',
   
   headers: {

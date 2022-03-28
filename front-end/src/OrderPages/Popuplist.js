@@ -26,9 +26,6 @@ const Popuplist = ({finaldata,handleClose}) => {
 
   }, [finaldata]);
 
-
-
-
   return (
 
     <div className="popup-box">
